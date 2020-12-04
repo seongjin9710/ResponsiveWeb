@@ -10,9 +10,9 @@ public class SampleController {
 	@Resource(name = "sampleService")
 	SampleService sampleService;
 	
-	@RequestMapping(value = "/sample.do")
+	@RequestMapping(value = "/main.do")
 	public String sample() {
-		return "sample/sample"; 
+		return "main/main"; 
 	}
 	
 }
