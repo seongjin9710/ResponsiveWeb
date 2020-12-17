@@ -5,42 +5,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Insert title here</title>
-     <style>
-        * {margin: 0; padding: 0;}   
-	html, body {
+  <link rel="stylesheet" href="css/styles.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kakaoTalk</title>
+<style>
+
+* {
+margin: 0;
+padding: 0;
+ 
+}
+#loginForm input:::
+html, body {
 	width: 100%;
 	height: 100%;
-	margin: 0;
 }
-
 #loginForm {
 	width: 100%;
 	height: 100%;
 }
+/*로그인 박스 위 아래 위치  */
+#allLoginBox{
+ width: 100%;
+ height:40%;
+ position: absolute;
+ top: 40%;
+}
+/*select , input 박스 크기   */
+#topBox > input, select{
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
 
+/*Logo  */
 #kakaoLogo {
 	width: 100%;
-	height: 300px;
+	height: 20%;
 	position: absolute;
-	top: 80px;
+	top: 70px;
 }
-/*전체 중 하단  */
-#footer {
-	position: absolute;
-	bottom: 100px;
-	left: 43%;
-}
-
-/*로그인 박스 위치  */
-#loginBox {
-	width: 100%;
-	position: absolute;
-	top: 300px;
-}
-
 /*로그인박스 상단  */
 #topBox {
 	width: 50%;
@@ -50,7 +54,7 @@
 #bottomBox {
 	width: 50%;
 }
-
+/*로그인 버튼  */
 .loginBtn {
 	width: 100%;
 	height: 70px;
@@ -66,17 +70,17 @@ a:hover {
 	cursor: pointer;
 }
 
+/* 물음표 아이콘  위치 및 글자 자동 띄어쓰기*/
 .questionClick {
 	width: 300px;
 	height: 100px;
 	background: rgb(77, 71, 15);
-	position: absolute;
-	top: 100px;
 	text-align: center;
 	word-wrap: break-word;
 	/*  */
 }
 
+/* 물음표 아이콘 클릭 시 글자위치  */
 .questionClick>p {
 	position: relative;
 	top: 10px;
@@ -84,57 +88,72 @@ a:hover {
 	color: rgb(255, 249, 193);
 }
 
+
 #footer {
-	width: 50%;
-	position: absolute;
-	left: 25%;
-	top: 300px;
+	width: 100%;
+    position: absolute;
+    bottom: 80px;
 }
-		
-		
-		
-		
-        /* 화면 너비 0 ~ 1200px */
-        @media (max-width: 1220px){
-            #loginForm {width: 95%;}
-        }
 
-        /* 화면 너비 0 ~ 768px */
-        @media (max-width: 768px){
-            #loginForm {width: 100%;}
-        }
+button:ACTIVE {
+	background: red;
+}
 
-        /* 화면 너비 0 ~ 480px */
-        @media (max-width: 480px){
-            #loginForm {width: 100%;}
-        }
-    </style>
+#topBox input::placeholder {
+	color: rgba(0,0,0, 0.1);
+}
+/*visual studio code가 똑같이 적용 되는 듯  */
+
+</style>
 </head>
 <body>
-    <div id="loginForm" style="background-color: rgb(249,228,1);" align="center">
-	<div style="float: right; margin-right: 30px; font-weight: bold;"><a><i class="fas fa-cog" style="padding-right: 20px;">
-	</i>|<img src="resources/images/noun_underscore_711167.png" width="20px;" style="padding-left: 10px;"> <i class="fas fa-times" style="padding-left: 20px;"></i></div></a>
-	<div id="kakaoLogo">
-		<a><i class="fas fa-comments  fa-10x"></i></a>
-	</div>
-	<div id="loginBox">
-		<div id="topBox">
-		<select style="width: 100%; height: 50px; border:1px solid #f5f5f5">
-			<option>chltjdwls16@naver.com</option><!--  -->
-		</select><br>
-		<input type="text" style="width: 99.7%;height: 50px; border:1px solid #f5f5f5; padding:0px; " class="password" placeholder="비밀번호">
-		</div>
-	    <div id="bottomBox">
-		<br><input type="button" value="로그인" class="loginBtn" disabled onclick="location.href='MyInfoPage.do';">
-		<br><span style="float: left; margin-top: 10px;"><input type="checkbox">자동로그인<a id="questionMark"><i class="far fa-question-circle"></i></a></span>
-	    	<div class="questionClick" align="center">
-	    		<p>평소 사용하고 있는 kakaoTalk 을  직접  만들어 보고 싶어서 제작하게 되었습니다.</p><!--  -->
-	    	</div>
-		<div id="footer" style="font-weight: bold;"><a>카카오계정 찾기</a><span style="padding: 10px;">|</span><a>비밀번호 재설정</a></div>
-	    </div>
-	</div>
-</div>	
-</body>
-<!-- <script src="resources/js/sample.js"></script>       -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>11:34</span>
+        <!--나중에 시간설정.  -->
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <h1 class="main-header__title">My Project kakao Clone</h1>
+      <p class="main-header__text">
+        kakaoTalk clone coding 2020, login with your email or phone number.
+      </p>
+    </header>
+    <form action="friends.html" method="GET" id="login-form">
+      <!--현재 스프링에서와 다르게 method 방식이 get인데 서버나 보안에 취약함
+    지금은 보낼 정보가 안 중요해서 그냥 씀   -->
+      <input
+        class="login-form__input"
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input
+        class="login-form__input"
+        name="member_id"
+        type="password"
+        placeholder="password"
+      />
+      <input
+        class="login_form__btn"
+        name="member_password"
+        type="submit"
+        value="Log In"
+      />
+      <a class="login-form__a" href="#">Find Kakao Account or Password</a>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/daac1f90d5.js"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>
