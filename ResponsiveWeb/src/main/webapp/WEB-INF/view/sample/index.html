@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kakaoTalk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>11:34</span>
+        <!--나중에 시간설정.  -->
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <h1 class="main-header__title">My Project kakao Clone</h1>
+      <p class="main-header__text">
+        kakaoTalk clone coding 2020, login with your email or phone number.
+      </p>
+    </header>
+    <form action="friends.html" method="GET" id="login-form">
+      <!--현재 스프링에서와 다르게 method 방식이 get인데 서버나 보안에 취약함
+    지금은 보낼 정보가 안 중요해서 그냥 씀   -->
+      <input
+        class="login-form__input"
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input
+        class="login-form__input"
+        name="member_id"
+        type="password"
+        placeholder="password"
+      />
+      <input
+        class="login_form__btn"
+        name="member_password"
+        type="submit"
+        value="Log In"
+      />
+      <a class="login-form__a" href="#">Find Kakao Account or Password</a>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/daac1f90d5.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.settings__icon {
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.settings__icon i {
+  margin-right: 20px;
+  opacity: 0.7;
+}
+.settings__icon-column:last-child {
+  opacity: 0.5;
+  border-bottom: var(--main);
+}

@@ -1,0 +1,56 @@
+#friends-display__link {
+  text-align: center;
+  display: block;
+  background-color: #fafafa;
+  padding: 15px 0;
+  font-size: 18px;
+  margin-bottom: 15px;
+  margin-top: -15px;
+}
+
+#friends-display__link i {
+  color: rgba(0, 0, 0, 0.3);
+  margin: 0px 8px;
+  margin-left: 15px;
+}
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+.friends-screen__channel {
+  border-top: 1px solid #00000033;
+  padding-top: 15px;
+}
+.friends-screen__channel-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* javaScript 하는게 아니라 숨기기만하는  animation  */
+@keyframes hideSplasScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  /*화면높이 vh 100%  */
+  width: 100vw;
+  /* 화면 높이 vw 100%  */
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 130px;
+  animation: hideSplasScreen 0.4s ease-in-out forwards;
+  /*animaiton 적용 후 값을 기억하려면 forwards  */
+  animation-delay: 2s;
+}
