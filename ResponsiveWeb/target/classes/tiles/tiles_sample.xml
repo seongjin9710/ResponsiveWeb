@@ -2,16 +2,26 @@
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
+	<!--첫 화면 tiles  -->
 	<definition name="baseLayout" template="/WEB-INF/view/common/template.jsp">
-		<put-attribute name="title" value="SampleProject"/>
+		<put-attribute name="topMenu" value="/WEB-INF/view/common/title.jsp"/>
 		<put-attribute name="menu" value="/WEB-INF/view/common/menu.jsp"/>
 		<put-attribute name="side" value=""/>
 		<put-attribute name="body" value=""/>
 	</definition>
 	
-	<definition name="sample/*" extends="baseLayout">
-		<put-attribute name="side" value="/WEB-INF/view/common/side.jsp"/>
-		<put-attribute name="body" value="/WEB-INF/view/sample/{1}.jsp" />
+	<definition name="baseLayout2" template="/WEB-INF/view/common/template2.jsp">
+		<put-attribute name="topMenu" value="/WEB-INF/view/common/title.jsp"/>
+		<put-attribute name="menu" value="/WEB-INF/view/common/menu.jsp"/>
+		<put-attribute name="side" value=""/>
+		<put-attribute name="body" value=""/>
+	</definition>
+	
+	<!--로그인이후  -->
+	<definition name="member/*" extends="baseLayout">
+		<put-attribute name="title" value="SampleProject"/>
+		<put-attribute name="side"  value="/WEB-INF/view/common/side.jsp"/>
+		<put-attribute name="body"  value="/WEB-INF/view/member/{1}.jsp" />
 	</definition>
 	
 	

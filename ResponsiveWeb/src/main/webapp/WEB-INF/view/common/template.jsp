@@ -6,8 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <title><tiles:insertAttribute name="title" /></title>
-<!-- 초기화 CSS -->
-<link rel="stylesheet" type="text/css" href="resources/css/reset.css?ver=2"/>
+<link rel="stylesheet" type="text/css" href="resources/css/styles.css?ver=2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -40,17 +40,17 @@ $.validator.addMethod('regx', function(value, element, regexpr){
 <body>
 <div style="height: 30px;"></div>
 <div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<tiles:insertAttribute name="menu" />
+	<div>
+		<div>
+			<tiles:insertAttribute name="menu"/>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-2" style="padding: 0px;">
-			<tiles:insertAttribute name="side" />
+		<div >
+			<tiles:insertAttribute name="side"/>
 		</div>
-		<div class="col-md-10">
-			<tiles:insertAttribute name="body" />
+		<div >
+			<tiles:insertAttribute name="body"/>
 		</div>
 	</div>
 </div>

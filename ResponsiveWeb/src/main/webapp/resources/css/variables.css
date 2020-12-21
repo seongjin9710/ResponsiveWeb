@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+:root {
+  --yellow: #fae100;
+  --horizontal-space: 25px;
+  /* padding에 들어갈 값으로 만듬  */
+  --main-border: 1px solid rgba(0, 0, 0, 0.3);
+}

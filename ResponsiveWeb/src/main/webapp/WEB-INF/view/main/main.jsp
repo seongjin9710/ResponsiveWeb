@@ -5,126 +5,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
- <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<title>Insert title here</title>
-<style>
-* {
-margin: 0;
-padding: 0;
-
-}
-html, body {
-	width: 100%;
-	height: 100%;
-}
-#loginForm {
-	width: 100%;
-	height: 100%;
-}
-#allLoginBox{
- width: 100%;
- height:40%;
- position: absolute;
- top: 40%;
-}
-#topBox > input, select{
-
-box-sizing: border-box;
--moz-box-sizing: border-box;
--webkit-box-sizing: border-box;
-}
-/*Logo  */
-#kakaoLogo {
-	width: 100%;
-	height: 20%;
-	position: absolute;
-	top: 70px;
-}
-/*로그인박스 상단  */
-#topBox {
-	width: 50%;
-	height: 110px;
-}
-/*로그인박스 하단  */
-#bottomBox {
-	width: 50%;
-}
-
-.loginBtn {
-	width: 100%;
-	height: 70px;
-	background: #f5f5f5;
-	font-weight: bold;
-	font-size: 20px;
-	border: none;
-	border-radius: 6px;
-	color: rgb(172,172,172);
-}
-
-a:hover {
-	cursor: pointer;
-}
-
-/* 물음표 아이콘  위치 및 글자 자동 띄어쓰기*/
-.questionClick {
-	width: 300px;
-	height: 100px;
-	background: rgb(77, 71, 15);
-	text-align: center;
-	word-wrap: break-word;
-	/*  */
-}
-
-/* 물음표 아이콘 클릭 시 글자위치  */
-.questionClick>p {
-	position: relative;
-	top: 10px;
-	margin: 10px;
-	color: rgb(255, 249, 193);
-}
-
-
-
-#footer {
-	width: 100%;
-    position: absolute;
-    bottom: 80px;
-}
-
-
- 
-</style>
+<link rel="stylesheet" type="text/css" href="resources/css/styles.css?ver=2"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kakaoTalk</title>
 </head>
 <body>
-<div id="loginForm" style="background-color: rgb(249,228,1);" align="center">
-	<div style="float: right; margin-right: 30px; font-weight: bold;"><a><i class="fas fa-cog" style="padding-right: 20px;">
-	</i>|<img src="resources/images/noun_underscore_711167.png" width="20px;" style="padding-left: 10px;"> <i class="fas fa-times" style="padding-left: 20px;"></i></div></a>
-	<div id="kakaoLogo">
-		<a><i class="fas fa-comments  fa-10x"></i></a>
-	</div>
-	<div id="allLoginBox">
-	<div id="loginBox">
-		<div id="topBox">
-		<select style="width: 100%; height: 50px; border:1px solid #f5f5f5">
-			<option>chltjdwls16@naver.com</option><!--  -->
-		</select><br>
-		<input type="text" style="width: 100%;height: 50px; border:1px solid #f5f5f5; padding:0px; " class="password" placeholder="비밀번호">
-		</div>
-	    <div id="bottomBox">
-		<br><input type="button" value="로그인" class="loginBtn" disabled onclick="location.href='MyInfoPage.do';">
-		<br><span style="float: left; margin-top: 10px;"><input type="checkbox">자동로그인<a id="questionMark"><i class="far fa-question-circle"></i></a></span>
-	    	<div class="questionClick" align="center">
-	    		<p>평소 사용하고 있는 kakaoTalk 을  직접  만들어 보고 싶어서 제작하게 되었습니다.</p><!--  -->
-	    	</div>
-	    </div>
-		</div>
-	</div>
-	<div id="footer" style="font-weight: bold;"><a>카카오계정 찾기</a><span style="padding: 10px;">|</span><a>비밀번호 재설정</a></div>
-</div>	
-</body>
-<script src="resources/js/mainPage.js?ver=222"></script>  
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>11:34</span>
+        <!--나중에 시간설정.  -->
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <h1 class="main-header__title">My Project kakao Clone</h1>
+      <p class="main-header__text">
+        kakaoTalk clone coding 2020, login with your email or phone number.
+      </p>
+    </header>
+    <form action="friends.html" method="GET" id="login-form">
+      <!--현재 스프링에서와 다르게 method 방식이 get인데 서버나 보안에 취약함
+    지금은 보낼 정보가 안 중요해서 그냥 씀   -->
+      <input
+        class="login-form__input"
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input
+        class="login-form__input"
+        name="member_id"
+        type="password"
+        placeholder="password"
+      />
+      <input
+        class="login_form__btn"
+        name="member_password"
+        type="submit"
+        value="Log In"
+      />
+      <a class="login-form__a" href="#">Find Kakao Account or Password</a>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/daac1f90d5.js"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>
