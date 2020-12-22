@@ -9,6 +9,24 @@
 <link rel="stylesheet" type="text/css" href="resources/css/styles.css?ver=9"/>
 </head>
 <body>
+	  <!-- 상태창 -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>11:34</span>
+        <!--나중에 시간설정.  -->
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+
     <header class="main-header">
       <h1 class="main-header__title">My Project kakao Clone</h1>
       <p class="main-header__text">

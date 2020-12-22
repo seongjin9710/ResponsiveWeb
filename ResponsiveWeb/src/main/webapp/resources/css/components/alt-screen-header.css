@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .alt-header {
-  padding: var(--horizontal-space);
+  padding: 25px;
   /*전체 동일한 header 부분 padding 변수  */
   margin-bottom: 15px;
   display: flex;

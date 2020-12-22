@@ -12,7 +12,7 @@ public class SampleController {
 	
 	@RequestMapping(value = "/loginForm.do")
 	public String loginForm() {
-		return "member/loginForm"; 
+		return "main/loginForm"; 
 	}
 	@RequestMapping(value = "/friends.do")
 	public String friends() {
