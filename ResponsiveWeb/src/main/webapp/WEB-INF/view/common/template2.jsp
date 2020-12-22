@@ -5,8 +5,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<%-- <title><tiles:insertAttribute name="title"/></title> --%>
-<link rel="stylesheet" type="text/css" href="resources/css/styles.css?ver=9"/>
+<title><tiles:insertAttribute name="title" /></title>
+<link rel="stylesheet" type="text/css" href="resources/css/styles.css?ver=5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- bootstrap CSS -->
@@ -38,17 +38,22 @@ $.validator.addMethod('regx', function(value, element, regexpr){
 </script>
 </head>
 <body>
+<div style="height: 30px;"></div>
+<div class="container">
 	<div>
 		<div>
-			<tiles:insertAttribute name="status_bar" />
-		</div>
-		<div>
-			<tiles:insertAttribute name="content" />
-		</div>
-		<div>
-			<tiles:insertAttribute name="footer" />
+			<tiles:insertAttribute name="status_bar"/>
 		</div>
 	</div>
+	<div class="row">
+		<div >
+			<tiles:insertAttribute name="content"/>
+		</div>
+		<div >
+			<tiles:insertAttribute name="footer"/>
+		</div>
+	</div>
+</div>
 
 
 

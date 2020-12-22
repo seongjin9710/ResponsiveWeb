@@ -4,24 +4,21 @@
 <tiles-definitions>
 	<!--첫 화면 tiles  -->
 	<definition name="baseLayout" template="/WEB-INF/view/common/template.jsp">
-		<put-attribute name="topMenu" value="/WEB-INF/view/common/title.jsp"/>
-		<put-attribute name="menu" value="/WEB-INF/view/common/menu.jsp"/>
-		<put-attribute name="side" value=""/>
+		<put-attribute name="status_bar" value="/WEB-INF/view/common/status_bar.jsp"/>
+		<put-attribute name="content" value="/WEB-INF/view/member/loginForm.jsp"/>
+		<put-attribute name="footer" value=""/>
 		<put-attribute name="body" value=""/>
 	</definition>
 	
-	<definition name="baseLayout2" template="/WEB-INF/view/common/template2.jsp">
-		<put-attribute name="topMenu" value="/WEB-INF/view/common/title.jsp"/>
-		<put-attribute name="menu" value="/WEB-INF/view/common/menu.jsp"/>
-		<put-attribute name="side" value=""/>
-		<put-attribute name="body" value=""/>
-	</definition>
+<!-- 	<definition name="baseLayout2" template="/WEB-INF/view/common/template2.jsp">
+		<put-attribute name="status_bar" value="/WEB-INF/view/common/status_bar.jsp"/>
+		<put-attribute name="content" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/view/common/footer.jsp"/>
+	</definition> -->
 	
 	<!--로그인이후  -->
 	<definition name="member/*" extends="baseLayout">
-		<put-attribute name="title" value="SampleProject"/>
-		<put-attribute name="side"  value="/WEB-INF/view/common/side.jsp"/>
-		<put-attribute name="body"  value="/WEB-INF/view/member/{1}.jsp" />
+			<put-attribute name="content" value="/WEB-INF/view/member/{1}.jsp"/>
 	</definition>
 	
 	

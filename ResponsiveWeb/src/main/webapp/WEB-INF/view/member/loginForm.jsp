@@ -5,34 +5,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="resources/css/styles.css?ver=2"/>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kakaoTalk</title>
+<link rel="stylesheet" type="text/css" href="resources/css/styles.css?ver=9"/>
 </head>
 <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span>No Service</span>
-        <i class="fas fa-wifi"></i>
-      </div>
-      <div class="status-bar__column">
-        <span>11:34</span>
-        <!--나중에 시간설정.  -->
-      </div>
-      <div class="status-bar__column">
-        <span>100%</span>
-        <i class="fas fa-battery-full fa-lg"></i>
-        <i class="fas fa-bolt"></i>
-      </div>
-    </div>
-
     <header class="main-header">
       <h1 class="main-header__title">My Project kakao Clone</h1>
       <p class="main-header__text">
         kakaoTalk clone coding 2020, login with your email or phone number.
       </p>
     </header>
-    <form action="friends.html" method="GET" id="login-form">
+    <form action="friends.do" method="post" id="login-form">
       <!--현재 스프링에서와 다르게 method 방식이 get인데 서버나 보안에 취약함
     지금은 보낼 정보가 안 중요해서 그냥 씀   -->
       <input

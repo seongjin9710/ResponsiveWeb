@@ -10,9 +10,33 @@ public class SampleController {
 	@Resource(name = "sampleService")
 	SampleService sampleService;
 	
-	@RequestMapping(value = "/main.do")
-	public String sample() {
-		return "main/main"; 
+	@RequestMapping(value = "/loginForm.do")
+	public String loginForm() {
+		return "member/loginForm"; 
+	}
+	@RequestMapping(value = "/friends.do")
+	public String friends() {
+		return "member/friends"; 
+	}
+	@RequestMapping(value = "/chat.do")
+	public String chat() {
+		return "member/chat"; 
+	}
+	@RequestMapping(value = "/chats.do")
+	public String chats() {
+		return "member/chats"; 
+	}
+	@RequestMapping(value = "/find.do")
+	public String find() {
+		return "member/find"; 
+	}
+	@RequestMapping(value = "/more.do")
+	public String more() {
+		return "member/more"; 
+	}
+	@RequestMapping(value = "/settings.do")
+	public String settings() {
+		return "member/settings"; 
 	}
 	
 }
