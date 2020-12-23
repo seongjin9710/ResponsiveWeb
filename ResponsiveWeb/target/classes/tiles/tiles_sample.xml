@@ -6,15 +6,14 @@
 	<definition name="baseLayout" template="/WEB-INF/view/common/template.jsp">
 		<put-attribute name="status_bar" value="/WEB-INF/view/common/status_bar.jsp"/>
 		<put-attribute name="content" value="/WEB-INF/view/member/loginForm.jsp"/>
-		<put-attribute name="footer" value=""/>
-		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/view/common/footer.jsp"/>
 	</definition>
 	
-	<definition name="baseLayout2" template="/WEB-INF/view/common/template2.jsp">
+	<!-- <definition name="baseLayout2" template="/WEB-INF/view/common/template2.jsp">
 		<put-attribute name="status_bar" value="/WEB-INF/view/common/status_bar.jsp"/>
 		<put-attribute name="content" value=""/>
 		<put-attribute name="footer" value="/WEB-INF/view/common/footer.jsp"/>
-	</definition>
+	</definition> -->
 	
 	<!--로그인이후  -->
 	<definition name="member/*" extends="baseLayout">

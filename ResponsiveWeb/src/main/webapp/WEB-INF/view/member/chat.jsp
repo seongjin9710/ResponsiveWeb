@@ -10,22 +10,6 @@
     <title>kakaoTalk</title>
 </head>
  <body id="chat-screen">
-    <!-- 상태창 -->
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span>No Service</span>
-        <i class="fas fa-wifi"></i>
-      </div>
-      <div class="status-bar__column">
-        <span>11:34</span>
-        <!--나중에 시간설정.  -->
-      </div>
-      <div class="status-bar__column">
-        <span>100%</span>
-        <i class="fas fa-battery-full fa-lg"></i>
-        <i class="fas fa-bolt"></i>
-      </div>
-    </div>
 
     <header class="alt-header">
       <div class="alt-header__column">

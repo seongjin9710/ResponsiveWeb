@@ -5,9 +5,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="resources/css/styles.css?ver=10"/>
+<link rel="stylesheet" type="text/css" href="resources/css/styles.css?ver=5"/>
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>kakaoTalk</title>
+   <title>kakaoTalk</title>
 </head>
 <body>
     <header class="screen-header">
@@ -64,34 +64,6 @@
       </div>
     </main>
 
-    <!-- nav>ul>li*4>a 라고 작성하면 아래의 폼이 자동으로 나옴  -->
-    <!-- 하단 메뉴바  -->
-    <nav class="nav">
-      <ul class="nav__ul">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.do"
-            ><i class="fas fa-user fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats.do">
-            <span class="nav__notification badge">1</span>
-            <i class="far fa-comment fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.do"
-            ><i class="fas fa-search fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.do">
-            <span class="nav__ellipsisTopCircle"></span>
-            <i class="fas fa-ellipsis-h fa-2x"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
     <!--ctal + d 같은 이름? 선택  -->
     <div id="splash-screen"><i class="fas fa-comment"></i></div>
     <script

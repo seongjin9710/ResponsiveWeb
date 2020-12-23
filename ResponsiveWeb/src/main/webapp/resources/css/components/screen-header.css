@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:25px;
+  padding: var(--horizontal-space);
   margin-bottom: 15px;
 }
 .screen-header__title {
@@ -15,7 +15,6 @@
 .screen-header__icons span {
   margin-left: 25px;
 }
-
 @keyframes rotateCog {
   from {
     transform: none;
