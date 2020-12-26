@@ -3,12 +3,12 @@ package com.spring.view;
 import javax.annotation.Resource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.spring.biz.SampleService;
+import com.spring.biz.MemberService;
 
 @Controller
 public class SampleController {
 	@Resource(name = "sampleService")
-	SampleService sampleService;
+	MemberService sampleService;
 	
 	@RequestMapping(value = "/loginForm.do")
 	public String loginForm() {
