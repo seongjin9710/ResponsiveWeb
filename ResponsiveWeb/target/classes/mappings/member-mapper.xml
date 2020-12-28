@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 맵퍼파일 생성 후 반드시 sql-map-config.xml 파일에 mapper 등록해줘야 함 -->
+<mapper namespace="memberMapper">
+	<resultMap type="com.spring.biz.vo.MemberVO" id="member">
+		<result column="MEMBER_ID" 				property="memberId"/>
+		<result column="MEMBER_PASSWORD" 		property="memberPassword"/>
+		<result column="MEMBER_NAME" 			property="memberName"/>
+		<result column="MEMBER_TELL" 			property="memberTell"/>
+		<result column="MEMBER_EMAIL" 			property="memberEmail"/>
+		<result column="MEMBER_ADDR" 			property="memberAddr"/>
+		<result column="MEMBER_GRADE" 			property="memberGrade"/>
+		<result column="MEMBER_GENDER" 			property="memberGender"/>
+		<result column="MEMBER_SIGN_UP_DATE" 	property="memberSignUpDate"/>
+		<result column="MEMBER_PHOTO" 			property="memberPhoto"/>
+	</resultMap>
+	
+	<insert id="signUpMember">
+		INSERT INTO MEMBER_INFO(
+		MEMBER_ID
+		,MEMBER_PASSWORD
+		,MEMBER_NAME
+		,MEMBER_TEL
+		,MEMBER_EMAIL
+		,MEMBER_ADDR
+		,MEMBER_GRADE
+		,MEMBER_GENDER
+		,MEMBER_SIGN_UP_DATE
+		,MEMBER_PHOTO
+		)VALUES(
+		,#{memberId}
+		,#{memberPassword}
+		,#{memberName}
+		,#{memberTell}
+		,#{memberEmail}
+		,#{memberAddr}
+		,#{memberGrade}
+		,#{memberGender}
+		,#{memberSignUpDate}
+		,#{memberPhoto}
+		)
+	</insert>
+	
+	
+	
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

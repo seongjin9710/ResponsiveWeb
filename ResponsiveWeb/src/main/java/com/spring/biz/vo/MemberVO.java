@@ -1,50 +1,82 @@
 package com.spring.biz.vo;
 
 public class MemberVO {
-	private String member_Id;
-	private String member_Password;
-	private String member_Name;
-	private int member_Tell;
-	private String member_Addr;
+	private String memberId;
+	private String memberPassword;
+	private String memberName;
+	private String memberTel;
+	private String memberEmail;
+	private String memberAddr;
+	private String memberGrade;
+	private String memberGender;
+	private String memberSignUpDate;
+	private String memberPhoto;
+	
+	public String getMemberId() {
+		return memberId;
+	}
+	public void setMemberId(String memberId) {
+		this.memberId = memberId;
+	}
+	public String getMemberPassword() {
+		return memberPassword;
+	}
+	public void setMemberPassword(String memberPassword) {
+		this.memberPassword = memberPassword;
+	}
+	public String getMemberName() {
+		return memberName;
+	}
+	public void setMemberName(String memberName) {
+		this.memberName = memberName;
+	}
+	public String getMemberTel() {
+		return memberTel;
+	}
+	public void setMemberTel(String memberTel) {
+		this.memberTel = memberTel;
+	}
+	public String getMemberEmail() {
+		return memberEmail;
+	}
+	public void setMemberEmail(String memberEmail) {
+		this.memberEmail = memberEmail;
+	}
+	public String getMemberAddr() {
+		return memberAddr;
+	}
+	public void setMemberAddr(String memberAddr) {
+		this.memberAddr = memberAddr;
+	}
+	public String getMemberGrade() {
+		return memberGrade;
+	}
+	public void setMemberGrade(String memberGrade) {
+		this.memberGrade = memberGrade;
+	}
+	public String getMemberGender() {
+		return memberGender;
+	}
+	public void setMemberGender(String memberGender) {
+		this.memberGender = memberGender;
+	}
+	public String getMemberSignUpDate() {
+		return memberSignUpDate;
+	}
+	public void setMemberSignUpDate(String memberSignUpDate) {
+		this.memberSignUpDate = memberSignUpDate;
+	}
+	public String getMemberPhoto() {
+		return memberPhoto;
+	}
+	public void setMemberPhoto(String memberPhoto) {
+		this.memberPhoto = memberPhoto;
+	}
+
 	
 	
 	
-	public String getMember_Id() {
-		return member_Id;
-	}
-	public void setMember_Id(String member_Id) {
-		this.member_Id = member_Id;
-	}
-	public String getMember_Password() {
-		return member_Password;
-	}
-	public void setMember_Password(String member_Password) {
-		this.member_Password = member_Password;
-	}
-	public String getMember_Name() {
-		return member_Name;
-	}
-	public void setMember_Name(String member_Name) {
-		this.member_Name = member_Name;
-	}
-	public int getMember_Tell() {
-		return member_Tell;
-	}
-	public void setMember_Tell(int member_Tell) {
-		this.member_Tell = member_Tell;
-	}
-	public String getMember_Addr() {
-		return member_Addr;
-	}
-	public void setMember_Addr(String member_Addr) {
-		this.member_Addr = member_Addr;
-	}
-	@Override
-	public String toString() {
-		return "MemberVO [member_Id=" + member_Id + ", member_Password=" + member_Password + ", member_Name="
-				+ member_Name + ", member_Tell=" + member_Tell + ", member_Addr=" + member_Addr + "]";
-	}
-	
+
 }
 
 
