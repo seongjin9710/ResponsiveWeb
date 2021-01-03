@@ -17,6 +17,7 @@
 		<result column="MEMBER_PHOTO" 			property="memberPhoto"/>
 	</resultMap>
 	
+	<!--회원가입  -->
 	<insert id="signUpMember">
 		INSERT INTO MEMBER_INFO(
 		MEMBER_ID
@@ -43,7 +44,10 @@
 		)
 	</insert>
 	
-	
+	<!--로그인  -->
+	<select id="" resultMap="member">
+		
+	</select>
 	
 	
 </mapper>
